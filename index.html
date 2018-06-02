@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+    </head>
+    <body>
+        <div class="nav">
+            <a id="messages" href="https://mail.google.com/mail/u/0/?tab=wm#inbox" >Почта</a>
+            <a id="pictures" href="https://www.google.by/imghp?hl=ru&tab=wi&authuser=0" >Картинки</a>
+            <a href="#" onclick="openNav()"><img class="menu link_img" src="./icons/MenuLight.png"/></a>
+            <a href="#"><img class="link_img" src="./icons/appointment-reminders-filled.png"/></a>
+            <a href="#" class="last"><img class="link_img" src="./icons/user-male-circle.png"/></a>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="grid">
+                <a href="https://myaccount.google.com/" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/User.png"/>
+                        <span class="name_of_service">My Account</span>
+                    </div>
+                </a>
+                <a href="https://www.google.by/webhp?tab=ww&authuser=0" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/Search.png"/>
+                        <span class="name_of_service">Search</span>
+                    </div>
+                </a>
+                <a href="https://www.google.by/maps/" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/Maps.png"/>
+                        <span class="name_of_service">Maps</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/Youtube.png"/>
+                        <span class="name_of_service">Youtube</span>
+                    </div>
+                </a>
+                <a href="https://play.google.com/" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/Play.png"/>
+                        <span class="name_of_service">Play</span>
+                    </div>
+                </a>
+                <a href="https://mail.google.com/" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/Gmail.png"/>
+                        <span class="name_of_service">Gmail</span>
+                    </div>
+                </a>
+                <a href="https://contacts.google.com/" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/Contacts.png"/>
+                        <span class="name_of_service">Contacts</span>
+                    </div>
+                </a>
+                <a href="https://drive.google.com/" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/Drive.png"/>
+                        <span class="name_of_service">Drive</span>
+                    </div>
+                </a>
+                <a href="https://calendar.google.com/" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/Calendar.png"/>
+                        <span class="name_of_service">Calendar</span>
+                    </div>
+                </a>
+                <a href="https://plus.google.com/u/0/" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/Google+.png"/>
+                        <span class="name_of_service">Google+</span>
+                    </div>
+                </a>
+                <a href="https://translate.google.by/" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/Translate.png"/>
+                        <span class="name_of_service">Translate</span>
+                    </div>
+                </a>
+                <a href="https://photos.google.com/" class="service_link">
+                    <div class="square">
+                        <img class="link_google_img" src="icons/Photos.png"/>
+                        <span class="name_of_service">Photos</span>
+                    </div>
+                </a>
+            </div>
+            <div class="more">
+                <span>More</span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="central_block">
+                <div class="image">
+                    <img src="./icons/google.png"/>
+                </div>
+                <div class="search">
+                    <input id="search_text" type="text">
+                    <img class="help_search" src="./icons/keyboard.png"/>
+                    <img class="help_search" src="./icons/microphone.png"/>
+                </div>
+                <div class="under_search">
+                    <div class="main_buttons">
+                        <div class="w3-container">
+                            <button id="search_button" class="w3-btn w3-theme-l4 w3-hover-light-gray trans">
+                                <a id="find" class="button_link">Поиск в гугл</a>
+                            </button>
+                            <button class="w3-btn w3-theme-l4 w3-hover-light-gray trans">
+                                <a id="luck" class="button_link" href="https://www.google.com/doodles/">Мне повезет!</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="change_language">
+                        <p id="before_language">Сервисы Google доступны на разных языках:</p>
+                        <a class="language_link" id="language" href="#" onclick="myFunc();">Беларуская</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="country">
+            <p>Беларусь</p>
+        </div>
+        <div class="footer">
+            <div class="left_footer">
+                <a id="advertising" class="left" href="https://www.google.com/intl/ru_by/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Реклама</a>
+                <a id="business" class="left" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Для бизнеса</a>
+                <a id="information" class="left" href="https://www.google.com/intl/ru_by/about/?utm_source=google.com&utm_medium=referral&utm_campaign=hp-footer&fg=1">Всё о Google</a>
+            </div>
+            <div class="right_footer">
+                <a id="confidentiality" class="right" href="https://policies.google.com/privacy?hl=ru&gl=by">Конфиденциальность</a>
+                <a id="conditions" class="right" href="https://policies.google.com/terms?hl=ru&gl=by">Условия</a>
+                <a id="settings" class="right" href="#">Настройки</a>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
