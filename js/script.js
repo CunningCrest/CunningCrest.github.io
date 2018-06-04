@@ -9,7 +9,18 @@ jQuery(function($){
 		    && div.has(e.target).length === 0) {
 			div.hide();
 		}
-	});
+    });
+    
+    $(document).ready(function() {
+        $('input').keydown(function(e) {
+            if (e.keyCode === 13) {
+                document.getElementById("find").removeAttribute("href");
+                var text = document.getElementById("search_text").value;
+                var strLink = "https://www.google.com/search?source=hp&ei=pG_jWsm8LYbg6ASDhIngCA&q=" + text + "&oq=" + text + "&gs_l=psy-ab.13..0i131k1l2j0l8.133885.141678.0.143867.23.13.7.0.0.0.167.1231.9j3.13.0....0...1c.1.64.psy-ab..3.19.1193.6..35i39k1j0i10i1k1j0i10i1i67k1j0i10i42k1j0i10k1j0i30k1j0i10i30k1j0i13k1j0i13i10i1k1j0i13i10k1j0i13i10i1i42k1j0i67k1.97.LiOBxn65Zs0";
+                window.location.href = strLink;
+            }
+        });
+    });
 });
 
 search_button.onclick = function() {
